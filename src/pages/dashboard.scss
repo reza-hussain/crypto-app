@@ -6,8 +6,29 @@
     display: flex;
 }
 
+
 .section-left{
     width: 55%;
+    position: relative;
+    .main-data{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        right: 50%;
+    
+        h1{
+            font-size: 5rem;
+        }
+    
+        h2{
+            font-size: 2rem;
+        }
+    
+    }
 }
 
 .section-right{
@@ -15,4 +36,70 @@
     background: rgba(255, 255, 255, .5);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
+    padding: 0px 80px;
+    position: relative;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+    .search{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        height: 90px;
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90px;
+            height: 90px;
+            border: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        input{
+            width: 80%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #101010;
+            font-size: 1.2rem;
+            outline: none;
+            padding: 10px;
+        }
+    }
+}
+
+.weather-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 20px 0;
+    h4{
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+    h2{
+        font-size: 3rem;
+    }
 }

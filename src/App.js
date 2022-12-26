@@ -1,6 +1,6 @@
 import React from 'react'
 import {Dashboard} from "./pages"
-import './App.scss'
+import './App.css'
 
 const App = () => {
   return (
